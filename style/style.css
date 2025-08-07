@@ -15,7 +15,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 .container {
     width: 700px;
     height: 800px;
@@ -25,6 +29,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .gameboard {
     background-color: rgb(121, 149, 149);
     width: 498px;
@@ -35,12 +40,14 @@ body {
     align-items: flex-start;
     flex-direction: row;
 }
-.gameboard > div {
+
+.gameboard>div {
     width: 166px;
     height: 166px;
     background-color: rgb(96, 93, 93);
     border: 0.1px solid white;
 }
+
 .circles {
     display: flex;
     flex-direction: row;
@@ -49,19 +56,22 @@ body {
     width: 498px;
     margin-top: 30px;
 }
-.circles > img {
+
+.circles>img {
     width: 120px;
     height: 120px;
 }
+
 .crosses {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 498px;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
-.crosses > img {
+
+.crosses>img {
     width: 120px;
     height: 120px;
 }
