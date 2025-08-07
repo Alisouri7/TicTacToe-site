@@ -17,8 +17,8 @@ body {
     height: 100vh;
 }
 .container {
-    width: 900px;
-    height: 550px;
+    width: 700px;
+    height: 800px;
     background-color: rgb(153, 159, 159);
     display: flex;
     justify-content: center;
