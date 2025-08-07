@@ -21,8 +21,8 @@ body {
 }
 
 .container {
-    width: 700px;
-    height: 800px;
+    width: 480px;
+    height: 550px;
     background-color: rgb(153, 159, 159);
     display: flex;
     justify-content: center;
@@ -32,8 +32,8 @@ body {
 
 .gameboard {
     background-color: rgb(121, 149, 149);
-    width: 498px;
-    height: 498px;
+    width: 345px;
+    height: 345px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -42,8 +42,8 @@ body {
 }
 
 .gameboard>div {
-    width: 166px;
-    height: 166px;
+    width: 115px;
+    height: 115px;
     background-color: rgb(96, 93, 93);
     border: 0.1px solid white;
 }
@@ -53,13 +53,13 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 498px;
-    margin-top: 30px;
+    width: 345px;
+    margin-top: 10px;
 }
 
 .circles>img {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
 }
 
 .crosses {
@@ -67,11 +67,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 498px;
-    margin-bottom: 30px;
+    width: 345px;
+    margin-bottom: 10px;
 }
 
 .crosses>img {
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
 }
