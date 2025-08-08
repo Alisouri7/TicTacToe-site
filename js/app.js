@@ -15,6 +15,8 @@ let divSix = $.getElementById('5')
 let divSeven = $.getElementById('6')
 let divEight = $.getElementById('7')
 let divNine = $.getElementById('8')
+let circlesSelector = $.querySelector('.circleSelector')
+let crosessSelector = $.querySelector('.crossSelector')
 ////////////////events
 crossOne.addEventListener('click', () => {
     crossOne.classList.toggle('selected')
