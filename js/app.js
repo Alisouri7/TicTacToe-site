@@ -46,4 +46,5 @@ function selectedClassRemover() {
     shapes.forEach((item) => {
         item.classList.remove('selected')
     })
-} 
+}
+window.addEventListener('dblclick', selectedClassRemover)
