@@ -79,6 +79,10 @@ body {
     height: 90px;
 }
 
+.selected {
+    background-color: #BCAAA4;
+    border-radius: 10px;
+}
 @media all and (max-width : 600px) {
     .container {
         width: 288px;
