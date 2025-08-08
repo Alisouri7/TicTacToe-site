@@ -18,38 +18,32 @@ let divEight = $.getElementById('7')
 let divNine = $.getElementById('8')
 ////////////////events
 crossOne.addEventListener('click', () => {
-    shapes.forEach((item) => {
-        item.classList.remove('selected')
-    })
+    selectedClassRemover()
     crossOne.classList.add('selected')
 })
 crossTwo.addEventListener('click', () => {
-    shapes.forEach((item) => {
-        item.classList.remove('selected')
-    })
+    selectedClassRemover()
     crossTwo.classList.add('selected')
 })
 crossThree.addEventListener('click', () => {
-    shapes.forEach((item) => {
-        item.classList.remove('selected')
-    })
+    selectedClassRemover()
     crossThree.classList.add('selected')
 })
 circleOne.addEventListener('click', () => {
-    shapes.forEach((item) => {
-        item.classList.remove('selected')
-    })
+    selectedClassRemover()
     circleOne.classList.add('selected')
 })
 circleTwo.addEventListener('click', () => {
-    shapes.forEach((item) => {
-        item.classList.remove('selected')
-    })
+    selectedClassRemover()
     circleTwo.classList.add('selected')
 })
 circleThree.addEventListener('click', () => {
+    selectedClassRemover()
+    circleThree.classList.add('selected')
+})
+
+function selectedClassRemover() {
     shapes.forEach((item) => {
         item.classList.remove('selected')
     })
-    circleThree.classList.add('selected')
-})
+} 
