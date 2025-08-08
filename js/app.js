@@ -7,7 +7,7 @@ let crossThree = $.querySelector('#crossthree')
 let circleOne = $.querySelector('#circleone')
 let circleTwo = $.querySelector('#circletwo')
 let circleThree = $.querySelector('#circlethree')
-let slots = $.querySelectorAll('.slots')
+let slots = $.querySelectorAll('.slot')
 let divOne = $.getElementById('0')
 let divTwo = $.getElementById('1')
 let divThree = $.getElementById('2')
@@ -47,13 +47,11 @@ slots.forEach((slot) => {
     slot.addEventListener('click', appendImgToSlot)
 })
 function appendImgToSlot () {
-    let myShape = shapes.forEach((shape) => {
-        if (shape.classList === 'selected') {
-            return shape
+    shapes.forEach((shape) => {
+        if (shape.className === 'selected') {
+            console.log(shape);
         }
     })
-    console.log(myShape);
-    
 }
 
 function selectedClassRemover() {
