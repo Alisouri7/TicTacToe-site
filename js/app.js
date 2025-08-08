@@ -34,4 +34,3 @@ circleTwo.addEventListener('click', () => {
 circleThree.addEventListener('click', () => {
     circleThree.classList.toggle('selected')
 })
-console.log(divFive);
