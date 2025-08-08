@@ -83,28 +83,35 @@ body {
     background-color: #BCAAA4;
     border-radius: 10px;
 }
+
 @media all and (max-width : 600px) {
     .container {
         width: 288px;
         height: 300px;
     }
+
     .gameboard {
         width: 174px;
         height: 174px;
     }
-    .gameboard > div {
+
+    .gameboard>div {
         width: 58px;
         height: 58px;
     }
-    .crosses > img {
+
+    .crosses>img {
         width: 45px;
         height: 45px;
     }
-    .circles > img {
+
+    .circles>img {
         width: 45px;
         height: 45px;
     }
-    .circles , .crosses {
+
+    .circles,
+    .crosses {
         width: 174px;
     }
 }

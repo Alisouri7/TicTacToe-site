@@ -1,11 +1,11 @@
 //elements
 let $ = document
-let crossOne = $.querySelector('.crossone')
-let crossTwo = $.querySelector('.crosstwo')
-let crossThree = $.querySelector('.crossthree')
-let circleOne = $.querySelector('.circleone')
-let circleTwo = $.querySelector('.circletwo')
-let circleThree = $.querySelector('.circlethree')
+let crossOne = $.querySelector('#crossone')
+let crossTwo = $.querySelector('#crosstwo')
+let crossThree = $.querySelector('#crossthree')
+let circleOne = $.querySelector('#circleone')
+let circleTwo = $.querySelector('#circletwo')
+let circleThree = $.querySelector('#circlethree')
 let divOne = $.getElementById('0')
 let divTwo = $.getElementById('1')
 let divThree = $.getElementById('2')
@@ -15,8 +15,6 @@ let divSix = $.getElementById('5')
 let divSeven = $.getElementById('6')
 let divEight = $.getElementById('7')
 let divNine = $.getElementById('8')
-let circlesSelector = $.querySelector('.circleSelector')
-let crosessSelector = $.querySelector('.crossSelector')
 ////////////////events
 crossOne.addEventListener('click', () => {
     crossOne.classList.toggle('selected')
