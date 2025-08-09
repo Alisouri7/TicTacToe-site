@@ -147,6 +147,11 @@ function checkColumn(columnArr, shapeType) {
     return true
 }
 
+function ticTacToeWinner (shapeType) {
+    let rowWin = checkRow(board[0], shapeType) || checkRow(board[1], shapeType) || checkRow(board[2], shapeType)
+    let columnWin = checkColumn(0, shapeType) || checkColumn(1, shapeType) || checkColumn(2, shapeType)
+}
+
 function selectedClassRemover() {
     shapes.forEach((item) => {
         item.classList.remove('selected')
