@@ -167,7 +167,7 @@ function ticTacToeWinner(shapeType) {
 
     if (rowWin || columnWin || diagonalWinLeftToRight || diagonalWinRightToLeft) {
         alert('Winner is: ' + shapeType)
-        history.go(0)
+        location.reload()
     }
 }
 
