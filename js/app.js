@@ -43,15 +43,50 @@ circleThree.addEventListener('click', () => {
     circleThree.classList.add('selected')
 })
 
-slots.forEach((slot) => {
-    slot.addEventListener('click', appendImgToSlot)
+divOne.addEventListener('click', () => {
+    appendImgToSlot(divOne)
+    selectedClassRemover()
 })
-function appendImgToSlot () {
+divTwo.addEventListener('click', () => {
+    appendImgToSlot(divTwo)
+    selectedClassRemover()
+})
+divThree.addEventListener('click', () => {
+    appendImgToSlot(divThree)
+    selectedClassRemover()
+})
+divFour.addEventListener('click', () => {
+    appendImgToSlot(divFour)
+    selectedClassRemover()
+})
+divFive.addEventListener('click', () => {
+    appendImgToSlot(divFive)
+    selectedClassRemover()
+})
+divSix.addEventListener('click', () => {
+    appendImgToSlot(divSix)
+    selectedClassRemover()
+})
+divSeven.addEventListener('click', () => {
+    appendImgToSlot(divSeven)
+    selectedClassRemover()
+})
+divEight.addEventListener('click', () => {
+    appendImgToSlot(divEight)
+    selectedClassRemover()
+})
+divNine.addEventListener('click', () => {
+    appendImgToSlot(divNine)
+    selectedClassRemover()
+})
+function appendImgToSlot (box) {
     shapes.forEach((shape) => {
         if (shape.className === 'selected') {
-            console.log(shape);
+            shape.classList.add('added')
+            box.append(shape)
         }
     })
+    
 }
 
 function selectedClassRemover() {

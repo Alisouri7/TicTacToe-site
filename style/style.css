@@ -44,6 +44,9 @@ body {
 }
 
 .gameboard>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 115px;
     height: 115px;
     background-color: #455A64;
@@ -84,6 +87,10 @@ body {
     border-radius: 10px;
 }
 
+.added {
+    width: 90px;
+    height: 90px;
+}
 @media all and (max-width : 600px) {
     .container {
         width: 288px;
