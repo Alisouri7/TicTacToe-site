@@ -27,9 +27,9 @@ let divEight = $.getElementById('7')
 let divNine = $.getElementById('8')
 
 let board = [
-    ['-','-','-'],
-    ['-','-','-'],
-    ['-','-','-']
+    ['-', '-', '-'],
+    ['-', '-', '-'],
+    ['-', '-', '-']
 ]
 ////////////////events
 crossOne.addEventListener('click', () => {
@@ -122,11 +122,29 @@ function appendImgToSlot(box) {
 
 }
 
-function addDetailsToBoard (box, shape) {
+function addDetailsToBoard(box, shape) {
     let row = box.getAttribute('row')
     let column = box.getAttribute('column')
     let shapeType = shape.getAttribute('alt')
     board[row][column] = shapeType
+}
+
+function checkRow(rowArr, shapeType) {
+    for (var i = 0; i < 3; i++) {
+        if (rowArr[i] !== shapeType) {
+            return false
+        }
+    }
+    return true
+}
+
+function checkColumn(columnArr, shapeType) {
+    for (var i = 0; i < 3; i++) {
+        if (board[i][columnArr] !== shapeType) {
+            return false
+        }
+    }
+    return true
 }
 
 function selectedClassRemover() {
