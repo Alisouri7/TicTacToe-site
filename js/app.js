@@ -100,6 +100,7 @@ divNine.addEventListener('click', () => {
     appendImgToSlot(divNine)
     selectedClassRemover()
 })
+
 function appendImgToSlot(box) {
     shapes.forEach((shape) => {
         if (shape.className === 'selected') {
