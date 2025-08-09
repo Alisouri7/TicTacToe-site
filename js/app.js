@@ -127,8 +127,6 @@ function addDetailsToBoard (box, shape) {
     let column = box.getAttribute('column')
     let shapeType = shape.getAttribute('alt')
     board[row][column] = shapeType
-    console.log(board);
-    
 }
 
 function selectedClassRemover() {
