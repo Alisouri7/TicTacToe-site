@@ -116,10 +116,11 @@ function appendImgToSlot(box) {
         if (shape.className === 'selected') {
             shape.classList.add('added')
             box.append(shape)
-            addDetailsToBoard(box, shape)
+            setTimeout(() => {
+                addDetailsToBoard(box, shape)
+            },5)
         }
     })
-
 }
 
 function addDetailsToBoard(box, shape) {
@@ -127,6 +128,7 @@ function addDetailsToBoard(box, shape) {
     let column = box.getAttribute('column')
     let shapeType = shape.getAttribute('alt')
     board[row][column] = shapeType
+    ticTacToeWinner(shapeType)
 }
 
 function checkRow(rowArr, shapeType) {
@@ -147,9 +149,25 @@ function checkColumn(columnArr, shapeType) {
     return true
 }
 
-function ticTacToeWinner (shapeType) {
-    let rowWin = checkRow(board[0], shapeType) || checkRow(board[1], shapeType) || checkRow(board[2], shapeType)
-    let columnWin = checkColumn(0, shapeType) || checkColumn(1, shapeType) || checkColumn(2, shapeType)
+function ticTacToeWinner(shapeType) {
+    let rowWin = checkRow(board[0], shapeType)
+        || checkRow(board[1], shapeType)
+        || checkRow(board[2], shapeType);
+
+    let columnWin = checkColumn(0, shapeType)
+        || checkColumn(1, shapeType)
+        || checkColumn(2, shapeType);
+
+    let diagonalWinLeftToRight = (board[0][0] === shapeType
+        && board[1][1] === shapeType
+        && board[2][2] === shapeType);
+    let diagonalWinRightToLeft = (board[0][2] === shapeType
+        && board[1][1] === shapeType
+        && board[2][0] === shapeType);
+
+    if (rowWin || columnWin || diagonalWinLeftToRight || diagonalWinRightToLeft) {
+        alert('Winner is: ' + shapeType)
+    }
 }
 
 function selectedClassRemover() {
@@ -157,4 +175,5 @@ function selectedClassRemover() {
         item.classList.remove('selected')
     })
 }
+
 window.addEventListener('dblclick', selectedClassRemover)
