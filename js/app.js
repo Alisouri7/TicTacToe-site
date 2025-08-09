@@ -116,9 +116,19 @@ function appendImgToSlot(box) {
         if (shape.className === 'selected') {
             shape.classList.add('added')
             box.append(shape)
+            addDetailsToBoard(box, shape)
         }
     })
 
+}
+
+function addDetailsToBoard (box, shape) {
+    let row = box.getAttribute('row')
+    let column = box.getAttribute('column')
+    let shapeType = shape.getAttribute('alt')
+    board[row][column] = shapeType
+    console.log(board);
+    
 }
 
 function selectedClassRemover() {
