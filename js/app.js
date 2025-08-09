@@ -4,9 +4,13 @@ let shapes = $.querySelectorAll('img')
 let crossOne = $.querySelector('#crossone')
 let crossTwo = $.querySelector('#crosstwo')
 let crossThree = $.querySelector('#crossthree')
+let crossFour = $.querySelector('#crossfour')
+let crossFive = $.querySelector('#crossfive')
 let circleOne = $.querySelector('#circleone')
 let circleTwo = $.querySelector('#circletwo')
 let circleThree = $.querySelector('#circlethree')
+let circleFour = $.querySelector('#circlefour')
+let circleFive = $.querySelector('#circlefive')
 let slots = $.querySelectorAll('.slot')
 let divOne = $.getElementById('0')
 let divTwo = $.getElementById('1')
@@ -30,6 +34,15 @@ crossThree.addEventListener('click', () => {
     selectedClassRemover()
     crossThree.classList.add('selected')
 })
+crossFour.addEventListener('click', () => {
+    selectedClassRemover()
+    crossFour.classList.add('selected')
+})
+crossFive.addEventListener('click', () => {
+    selectedClassRemover()
+    crossFive.classList.add('selected')
+})
+
 circleOne.addEventListener('click', () => {
     selectedClassRemover()
     circleOne.classList.add('selected')
@@ -41,6 +54,14 @@ circleTwo.addEventListener('click', () => {
 circleThree.addEventListener('click', () => {
     selectedClassRemover()
     circleThree.classList.add('selected')
+})
+circleFour.addEventListener('click', () => {
+    selectedClassRemover()
+    circleFour.classList.add('selected')
+})
+circleFive.addEventListener('click', () => {
+    selectedClassRemover()
+    circleFive.classList.add('selected')
 })
 
 divOne.addEventListener('click', () => {
@@ -79,14 +100,14 @@ divNine.addEventListener('click', () => {
     appendImgToSlot(divNine)
     selectedClassRemover()
 })
-function appendImgToSlot (box) {
+function appendImgToSlot(box) {
     shapes.forEach((shape) => {
         if (shape.className === 'selected') {
             shape.classList.add('added')
             box.append(shape)
         }
     })
-    
+
 }
 
 function selectedClassRemover() {

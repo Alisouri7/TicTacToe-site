@@ -64,8 +64,8 @@ body {
 }
 
 .circles>img {
-    width: 90px;
-    height: 90px;
+    width: 54px;
+    height: 54px;
 }
 
 .crosses {
@@ -78,8 +78,8 @@ body {
 }
 
 .crosses>img {
-    width: 90px;
-    height: 90px;
+    width: 54px;
+    height: 54px;
 }
 
 .selected {
@@ -88,8 +88,8 @@ body {
 }
 
 .added {
-    width: 90px;
-    height: 90px;
+    width: 54px;
+    height: 54px;
 }
 @media all and (max-width : 600px) {
     .container {
