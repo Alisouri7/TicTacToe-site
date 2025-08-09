@@ -108,13 +108,13 @@ body {
     }
 
     .crosses>img {
-        width: 45px;
-        height: 45px;
+        width: 27px;
+        height: 27px;
     }
 
     .circles>img {
-        width: 45px;
-        height: 45px;
+        width: 27px;
+        height: 27px;
     }
 
     .circles,
@@ -122,7 +122,7 @@ body {
         width: 174px;
     }
     .added {
-    width: 45px;
-    height: 45px;
+    width: 27px;
+    height: 27px;
 }
 }
