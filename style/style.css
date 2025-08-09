@@ -121,4 +121,8 @@ body {
     .crosses {
         width: 174px;
     }
+    .added {
+    width: 45px;
+    height: 45px;
+}
 }
