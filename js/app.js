@@ -1,17 +1,21 @@
 //elements
 let $ = document
 let shapes = $.querySelectorAll('img')
+
 let crossOne = $.querySelector('#crossone')
 let crossTwo = $.querySelector('#crosstwo')
 let crossThree = $.querySelector('#crossthree')
 let crossFour = $.querySelector('#crossfour')
 let crossFive = $.querySelector('#crossfive')
+
 let circleOne = $.querySelector('#circleone')
 let circleTwo = $.querySelector('#circletwo')
 let circleThree = $.querySelector('#circlethree')
 let circleFour = $.querySelector('#circlefour')
 let circleFive = $.querySelector('#circlefive')
+
 let slots = $.querySelectorAll('.slot')
+
 let divOne = $.getElementById('0')
 let divTwo = $.getElementById('1')
 let divThree = $.getElementById('2')
@@ -21,6 +25,12 @@ let divSix = $.getElementById('5')
 let divSeven = $.getElementById('6')
 let divEight = $.getElementById('7')
 let divNine = $.getElementById('8')
+
+let board = [
+    ['-','-','-'],
+    ['-','-','-'],
+    ['-','-','-']
+]
 ////////////////events
 crossOne.addEventListener('click', () => {
     selectedClassRemover()
